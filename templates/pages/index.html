@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    {% if name == None %}
+        <h1> The name is not available</h1>
+    {% else %}
+        <h1>The name is {{name}}</h1>
+    {% endif %}
+
+    <img src="{% static 'pics/elon.jpg' %}" alt="">
+
+{% endblock %}
